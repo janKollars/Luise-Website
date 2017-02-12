@@ -846,28 +846,28 @@ nav.langselect {
   .index-content p:last-child {
     margin-bottom: 0; }
 
-.index-content #bio {
+#bio {
   background-color: #e8e8e8; }
 
 @media (min-width: 768px) {
-  .index-content .bio-desc {
+  .bio-desc {
     width: 66.19718%;
     float: left;
     margin-right: 1.40845%; } }
 
 @media (min-width: 1200px) {
-  .index-content .bio-desc {
+  .bio-desc {
     width: 57.74648%;
     float: left;
     margin-right: 1.40845%; } }
 
-.index-content .bio-desc table {
+.bio-desc table {
   margin-bottom: 1rem; }
 
-.index-content .bio-desc td:first-child {
+.bio-desc td:first-child {
   padding-right: 1rem; }
 
-.index-content .profil {
+.profil {
   width: 100%;
   float: left;
   margin-left: 0;
@@ -877,39 +877,39 @@ nav.langselect {
   background-size: cover;
   border-radius: 50%; }
   @media (min-width: 544px) {
-    .index-content .profil {
+    .profil {
       width: 49.29577%;
       float: left;
       margin-right: 1.40845%;
       margin-left: 25.35211%;
       margin-right: 25.35211%; } }
   @media (min-width: 768px) {
-    .index-content .profil {
+    .profil {
       width: 32.39437%;
       float: right;
       margin-right: 0;
       margin-left: 0%;
       margin-right: 0%; } }
   @media (min-width: 1200px) {
-    .index-content .profil {
+    .profil {
       width: 23.94366%;
       float: right;
       margin-right: 0; } }
-  .index-content .profil::before {
+  .profil::before {
     content: "";
     display: block;
     margin-top: 100%; }
 
-.index-content #work {
+#work {
   padding-bottom: 0; }
-  .index-content #work section:first-of-type {
+  #work section:first-of-type {
     padding-top: 4rem; }
-  .index-content #work section:nth-child(odd) {
+  #work section:nth-child(odd) {
     background-color: #e8e8e8; }
-  .index-content #work h3 {
+  #work h3 {
     margin-bottom: 3rem; }
   @media (min-width: 768px) {
-    .index-content #work .demo-projects {
+    #work .demo-projects {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -920,36 +920,39 @@ nav.langselect {
               justify-content: space-between;
       margin: -.5em; } }
   @media (min-width: 768px) {
-    .index-content #work .demo-projects figure {
+    #work .demo-projects figure {
       max-width: 300px;
       margin: .5em; } }
-  .index-content #work .demo-projects img {
+  #work .demo-projects img {
     width: 100%; }
-  .index-content #work section:last-of-type .kat-link {
+  #work section:last-of-type .kat-link {
     border-bottom: 0; }
-  .index-content #work .kat-link {
+  #work .kat-link {
     margin-top: 1rem; }
-    .index-content #work .kat-link a {
+    #work .kat-link a {
       display: inline-block; }
-    .index-content #work .kat-link .arrow-link {
+    #work .kat-link .arrow-link {
       display: inline-block;
       -webkit-transition: -webkit-transform 300ms ease-in-out;
       transition: -webkit-transform 300ms ease-in-out;
       transition: transform 300ms ease-in-out;
       transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out; }
-    .index-content #work .kat-link a:hover .arrow-link {
+    #work .kat-link a:hover .arrow-link {
       -webkit-transform: translateX(1rem);
           -ms-transform: translateX(1rem);
               transform: translateX(1rem); }
-    .index-content #work .kat-link a:hover {
+    #work .kat-link a:hover {
       padding-right: 1rem; }
 
-.index-content #contact {
+#insta-feed .juicer, #insta-feed .referral {
+  display: none; }
+
+#contact {
   background-color: #424242;
   color: #e8e8e8; }
-  .index-content #contact > div {
+  #contact > div {
     text-align: center; }
-  .index-content #contact .mail {
+  #contact .mail {
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -957,7 +960,7 @@ nav.langselect {
     text-decoration: none;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out; }
-    .index-content #contact .mail::after {
+    #contact .mail::after {
       position: relative;
       display: block;
       z-index: 1;
@@ -966,7 +969,7 @@ nav.langselect {
       border-bottom: 0.0625rem solid #e8e8e8;
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out; }
-    .index-content #contact .mail:hover::after {
+    #contact .mail:hover::after {
       width: 0; }
 
 .post-header {
