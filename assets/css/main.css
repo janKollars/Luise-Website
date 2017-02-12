@@ -431,6 +431,15 @@ blockquote {
 /**
  * Clearfix
  */
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 .625rem; }
+  .container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
 h1, h2, h3, h4 {
   line-height: normal; }
 
@@ -506,8 +515,10 @@ h4 {
   .project-cover a, .project-cover a:hover, .project-cover a:visited {
     color: #e8e8e8; }
   .project-cover img {
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out; }
+    -webkit-transition: -webkit-filter 300ms ease-in-out;
+    transition: -webkit-filter 300ms ease-in-out;
+    transition: filter 300ms ease-in-out;
+    transition: filter 300ms ease-in-out, -webkit-filter 300ms ease-in-out; }
   .project-cover figcaption {
     position: absolute;
     top: 0;
@@ -518,10 +529,10 @@ h4 {
     color: #e8e8e8;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    -webkit-transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
     border-radius: 4px;
-    padding: 2rem; }
+    padding: 1rem; }
     @media (min-width: 768px) {
       .project-cover figcaption {
         padding: 1rem; } }
@@ -537,8 +548,8 @@ h4 {
       display: block;
       border-bottom: 0.125rem solid #e8e8e8;
       width: 0;
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
+      -webkit-transition: width 300ms ease-in-out;
+      transition: width 300ms ease-in-out;
       -webkit-transition-delay: 200ms;
               transition-delay: 200ms; }
 
@@ -789,15 +800,6 @@ nav.langselect {
 .post-meta {
   color: #515151; }
 
-.container {
-  max-width: 60rem;
-  margin: 0 auto;
-  padding: 0 .625rem; }
-  .container::after {
-    content: "";
-    display: block;
-    clear: both; }
-
 .header {
   background-color: #e8e8e8;
   overflow: hidden; }
@@ -849,56 +851,35 @@ nav.langselect {
 #bio {
   background-color: #e8e8e8; }
 
-@media (min-width: 768px) {
-  .bio-desc {
-    width: 66.19718%;
-    float: left;
-    margin-right: 1.40845%; } }
+@media (min-width: 544px) {
+  .bio-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
-@media (min-width: 1200px) {
-  .bio-desc {
-    width: 57.74648%;
-    float: left;
-    margin-right: 1.40845%; } }
-
-.bio-desc table {
-  margin-bottom: 1rem; }
-
-.bio-desc td:first-child {
-  padding-right: 1rem; }
-
-.profil {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  position: relative;
-  background: url(/assets/img/placeholder.png) no-repeat center;
-  background-size: cover;
-  border-radius: 50%; }
+.bio-desc {
+  width: 100%; }
   @media (min-width: 544px) {
-    .profil {
-      width: 49.29577%;
-      float: left;
-      margin-right: 1.40845%;
-      margin-left: 25.35211%;
-      margin-right: 25.35211%; } }
-  @media (min-width: 768px) {
-    .profil {
-      width: 32.39437%;
-      float: right;
-      margin-right: 0;
-      margin-left: 0%;
-      margin-right: 0%; } }
-  @media (min-width: 1200px) {
-    .profil {
-      width: 23.94366%;
-      float: right;
-      margin-right: 0; } }
-  .profil::before {
-    content: "";
-    display: block;
-    margin-top: 100%; }
+    .bio-desc {
+      width: 60%; } }
+  @media (min-width: 992px) {
+    .bio-desc {
+      width: 50%; } }
+
+.profil-img {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  width: 100%; }
+  @media (min-width: 544px) {
+    .profil-img {
+      width: 38%;
+      height: autor; } }
 
 #work {
   padding-bottom: 0; }
@@ -908,7 +889,7 @@ nav.langselect {
     background-color: #e8e8e8; }
   #work h3 {
     margin-bottom: 3rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 320px) {
     #work .demo-projects {
       display: -webkit-box;
       display: -webkit-flex;
@@ -918,10 +899,16 @@ nav.langselect {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
+      margin: -.25em; } }
+  @media (min-width: 544px) {
+    #work .demo-projects {
       margin: -.5em; } }
-  @media (min-width: 768px) {
+  @media (min-width: 320px) {
     #work .demo-projects figure {
       max-width: 300px;
+      margin: .25em; } }
+  @media (min-width: 544px) {
+    #work .demo-projects figure {
       margin: .5em; } }
   #work .demo-projects img {
     width: 100%; }

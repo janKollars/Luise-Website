@@ -132,3 +132,14 @@ blockquote {
         clear: both;
     }
 }
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 .625rem;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
