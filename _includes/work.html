@@ -18,29 +18,30 @@
     <div class="container">
       <div class="demo-projects">
       {% for project in work.projects %}
-        <figure class="project-cover">
-          <img alt="Projekt" src="{{ project.img }}">
-          <figcaption>
-            <a href="{{ project.link }}">
-              <h4>
-              {% if page.language == "en" %}
-                {{ project.title }}
-              {% else %}
-                {{ project.title-de }}
-              {% endif %}
-              </h4>
-
-              <p>
+        <div class="project">
+          <figure class="project-cover">
+            <img alt="Projekt" src="{{ project.img }}">
+            <figcaption>
+              <a href="{{ project.link }}">
+                <h4>
                 {% if page.language == "en" %}
-                  {{ project.desc }}
+                  {{ project.title }}
                 {% else %}
-                  {{ project.desc-de }}
+                  {{ project.title-de }}
                 {% endif %}
-              </p>
-            </a>
-          </figcaption>
-        </figure>
+                </h4>
 
+                <p>
+                  {% if page.language == "en" %}
+                    {{ project.desc }}
+                  {% else %}
+                    {{ project.desc-de }}
+                  {% endif %}
+                </p>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
       {% endfor %}
       </div>
     </div>

@@ -78,17 +78,25 @@
 
   .demo-projects
     +breakp($xs)
-      display: flex
-      justify-content: space-between
-      margin: -.25em
+      margin-right: -.5rem
     +breakp($sm)
-      margin: -.5em
+      margin-right: -1rem
+  .project
+    display: inline-block
+    width: 100%
+    +breakp($xs)
+      width: 50%
+    +breakp($sm)
+      width: 33.33333%
+
     figure
+      line-height: 0
       +breakp($xs)
-        max-width: 300px
-        margin: .25em
+        margin-right: .5rem
       +breakp($sm)
-        margin: .5em
+        margin-right: 1rem
+    figcaption
+      line-height: normal
     img
       width: 100%
   section

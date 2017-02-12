@@ -896,27 +896,31 @@ nav.langselect {
     margin-bottom: 3rem; }
   @media (min-width: 320px) {
     #work .demo-projects {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin: -.25em; } }
+      margin-right: -.5rem; } }
   @media (min-width: 544px) {
     #work .demo-projects {
-      margin: -.5em; } }
-  @media (min-width: 320px) {
-    #work .demo-projects figure {
-      max-width: 300px;
-      margin: .25em; } }
-  @media (min-width: 544px) {
-    #work .demo-projects figure {
-      margin: .5em; } }
-  #work .demo-projects img {
+      margin-right: -1rem; } }
+  #work .project {
+    display: inline-block;
     width: 100%; }
+    @media (min-width: 320px) {
+      #work .project {
+        width: 50%; } }
+    @media (min-width: 544px) {
+      #work .project {
+        width: 33.33333%; } }
+    #work .project figure {
+      line-height: 0; }
+      @media (min-width: 320px) {
+        #work .project figure {
+          margin-right: .5rem; } }
+      @media (min-width: 544px) {
+        #work .project figure {
+          margin-right: 1rem; } }
+    #work .project figcaption {
+      line-height: normal; }
+    #work .project img {
+      width: 100%; }
   #work section:last-of-type .kat-link {
     border-bottom: 0; }
   #work .kat-link {
