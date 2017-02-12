@@ -1,0 +1,18 @@
+title: Luise Kollars
+description:
+  en: Artist
+  de: Künstlerin
+permalink: pretty
+baseurl: ""
+email: luise.kollars@gmail.com
+exclude: ["node_modules",
+  "assets/css/0-tools",
+  "assets/css/1-base",
+  "assets/css/2-modules",
+  "assets/css/3-layout",
+  "assets/css/fonts",
+  "assets/css/*.scss",
+  "gulpfile.js",
+  "package.json",
+  "preview.jpg",
+  "README.md"]

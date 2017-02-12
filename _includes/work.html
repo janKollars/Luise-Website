@@ -1,0 +1,55 @@
+<section id="work">
+  <h2 class="container">
+    {% if page.language == "en" %}
+      What I do ...
+    {% else %}
+      Was ich mache ...
+    {% endif %}
+  </h2>
+  {% for work in site.data.work %}
+  <section>
+    <h3 class="container">
+      {% if page.language == "en" %}
+        {{ work.kat }}
+      {% else %}
+        {{ work.kat-de }}
+      {% endif %}
+    </h3>
+    <div class="container">
+      <div class="demo-projects">
+      {% for project in work.projects %}
+        <figure class="project-cover">
+          <img alt="Projekt" src="{{ project.img }}">
+          <figcaption>
+            <a href="{{ project.link }}">
+              <h4>
+              {% if page.language == "en" %}
+                {{ project.title }}
+              {% else %}
+                {{ project.title-de }}
+              {% endif %}
+              </h4>
+            </a>
+            <p>
+              {% if page.language == "en" %}
+                {{ project.desc }}
+              {% else %}
+                {{ project.desc-de }}
+              {% endif %}
+            </p>
+          </figcaption>
+        </figure>
+
+      {% endfor %}
+      </div>
+    </div>
+    <div class="container kat-link">
+      {% if page.language == "en" %}
+        <a href="/{{ work.link }}">all projects <span class="arrow-link">&#10093;</span></a>
+      {% else %}
+        <a href="/de/{{ work.link }}">alle Projekte <span class="arrow-link">&#10093;</span></a>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+</section>

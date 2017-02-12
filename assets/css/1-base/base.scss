@@ -1,0 +1,134 @@
+// Our variables
+$base-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$text-color-light: lighten($text-color, 25%);
+$background-color: #fdfdfd;
+$footer-color:     #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey:       #828282;
+$grey-light: lighten($grey, 40%);
+$grey-dark:  darken($grey, 25%);
+
+// Bootstrap variables
+$xs: 0px;
+$sm: 544px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+@mixin breakp($device) {
+    @media (min-width: $device) {
+        @content;
+    }
+}
+
+/**
+ * Basic styling
+ */
+html {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+body {
+    font: $base-font-weight 100% $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    font-kerning: normal;
+    max-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+}
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey;
+    border-left: 4px solid $grey-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

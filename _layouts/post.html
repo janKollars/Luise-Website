@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include nav-general.html %}
+<header class="header post-header">
+  <div class="container">
+    <h2>{{ page.title }}</h1>
+  </div>
+</header>
+<div class="post-content container">
+  {% assign inhalt = page.content | strip_newlines %}
+  {% if inhalt == "" %}
+  <img src="/assets/img/{{page.categories[0]}}/{{page.thumbnail}}" alt="{{page.title}}">
+  {% else %}
+  {{content}}
+  {% endif %}
+
+</div>

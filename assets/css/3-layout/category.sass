@@ -1,0 +1,38 @@
+.page-header
+  margin-bottom: 4rem
+  padding: 4rem 0 3rem
+  +breakp($lg)
+    padding: 7rem 0 4rem 0
+
+.title
+  background-color: $grey-light
+  margin: 0
+  font-weight: 300
+
+.post-list
+  list-style: none
+  padding-left: 0
+  display: flex
+  flex-wrap: wrap
+  margin-left: -.5em
+  margin-right: -.5em
+  background-color: $background-color
+  position: relative
+
+.post-item
+  flex: 1 0 200px
+  margin-bottom: 5rem
+  margin-left: .5em
+  margin-right: .5em
+  +breakp($sm)
+    max-width: 300px
+
+  img
+    width: 100%
+  h4
+    margin-top: 1rem
+    margin-bottom: .25rem
+    a
+      color: $text-color
+.post-meta
+  color: $text-color-light

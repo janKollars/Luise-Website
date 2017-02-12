@@ -1,0 +1,88 @@
+- kat: Photography
+  kat-de: Fotografie
+  link: photography
+  projects:
+    - title: Project 1
+      title-de: Projekt 1
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 2
+      title-de: Projekt 2
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 3
+      title-de: Projekt 3
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+- kat: Printed work
+  kat-de: Drucke
+  link: print
+  projects:
+    - title: Project 1
+      title-de: Projekt 1
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 2
+      title-de: Projekt 2
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 3
+      title-de: Projekt 3
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+- kat: Collages
+  kat-de: Collagen
+  link: collages
+  projects:
+    - title: (Ent-)Normiert
+      title-de: (Ent-)Normiert
+      desc: Versuch die Köpernormierung zu brechen
+      desc-de: Versuch die Köpernormierung zu brechen
+      img: /assets/img/collages/thumbnails/ent_normiert_300x225.jpg
+      link: /collages/2016/11/05/en-Ent-Normiert/
+    - title: Project 2
+      title-de: Projekt 2
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 3
+      title-de: Projekt 3
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+- kat: Drawings
+  kat-de: Zeichnungen
+  link: drawings
+  projects:
+    - title: Project 1
+      title-de: Projekt 1
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 2
+      title-de: Projekt 2
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'
+    - title: Project 3
+      title-de: Projekt 3
+      desc: description placeholder placeholder
+      desc-de: Beschreibung Platzhalter Platzhalter
+      img: /assets/img/placeholder.png
+      link: '#'

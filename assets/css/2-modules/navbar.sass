@@ -1,0 +1,122 @@
+#top-menu
+  background-color: $grey-dark
+  position: relative
+  z-index: 100
+  .container
+    +breakp($md)
+      display: flex
+      justify-content: space-between
+      align-items: center
+  .logburg
+    padding: 1rem 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+    width: 100%
+    +breakp($md)
+      width: 30%
+      display: inline-block
+      height: 100%
+      padding: 0
+    +breakp($xl)
+      width: 60%
+
+  a
+    color: $grey-light
+    transition: all 300ms ease-in-out
+    &:hover
+      color: #fff
+      text-decoration: none
+  .logo
+    display: inline-block
+    color: white
+    +breakp($md)
+      width: 100%
+
+#burger
+  position: relative
+  cursor: pointer
+  height: 24px
+  width: 40px
+  +breakp($md)
+    display: none
+
+  span
+    display: block
+    background: $grey-light
+    height: 4px
+    width: 100%
+    position: absolute
+    transition: all 0.5s ease
+  span:nth-child(1)
+    top: 0px
+  span:nth-child(2)
+    top: 12px
+  span:nth-child(3)
+    top: 24px
+#burger.is-open
+  span:nth-child(1)
+    transform: rotate(45deg)
+    transform-origin: 0%
+    left: 2px
+  span:nth-child(2)
+    background: transparent
+  span:nth-child(3)
+    transform: rotate(-45deg)
+    transform-origin: 15%
+
+#top-nav
+  background-color: $grey-dark
+  width: 100vw
+  height: 100vh
+  position: absolute
+  padding: 50px 0
+  right: -100vw
+  opacity: 0
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out
+  +breakp($md)
+    height: 100%
+    display: inline-block
+    position: static
+    right: auto
+    padding: 0
+    width: 70%
+    opacity: 1
+  +breakp($xl)
+    width: 40%
+
+.top-nav-list
+  list-style: none
+  margin: 0
+  padding: 0
+  +breakp($md)
+    display: flex
+    justify-content: space-between
+
+  li
+    text-align: center
+    width: 100%
+    +breakp($md)
+      width: auto
+      text-align: right
+      display: inline-block
+      height: 100%
+    &:last-of-type
+      +breakp($md)
+        margin: 0
+        a
+          padding: 1rem 0 1rem .5rem
+  a
+    display: inline-block
+    padding: 1rem
+    +breakp($md)
+      width: auto
+      height: 100%
+      text-align: right
+      padding: 1rem .5rem
+
+
+#top-nav.is-open
+  opacity: 1
+  transform: translateX(-100vw)

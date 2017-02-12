@@ -1,0 +1,19 @@
+nav.langselect
+  border: 0.00625rem $grey-dark solid
+  border-top: 0
+  position: absolute
+  z-index: 99
+
+  a
+    color: $grey-dark
+    transition: all 300ms ease-in-out
+    &:hover
+      color: #000
+      text-decoration: none
+
+
+  .de:lang(de), .en:lang(en)
+    background-color: $grey-dark
+    color: $grey-light
+  .de:lang(de):hover, .en:lang(en):hover
+    color: #fff
