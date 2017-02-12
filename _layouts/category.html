@@ -15,7 +15,7 @@ layout: default
         {% for post in site.categories.[page.catname] %}
         <li class="post-item">
           <figure class="figoverlay">
-            <img src="/assets/img/{{post.categories[0]}}/thumbnails/{{post.thumbnail | replace: '.jpg', '_300x225.jpg'}}" alt="{{post.title}}">
+            <img src="/assets/img/{{post.categories[0]}}/thumbnails/{{post.thumbnail | replace: '.', '_300x225.'}}" alt="{{post.title}}">
             <figcaption>
               <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
               <p class="post-meta">

@@ -11,7 +11,9 @@ layout: default
 <div class="post-content container">
   {% assign inhalt = page.content | strip_newlines %}
   {% if inhalt == "" %}
-  <img src="/assets/img/{{page.categories[0]}}/{{page.thumbnail}}" alt="{{page.title}}">
+  <figure>
+    <img src="/assets/img/{{page.categories[0]}}/{{page.thumbnail}}" alt="{{page.title}}">
+  </figure>
   {% else %}
   {{content}}
   {% endif %}

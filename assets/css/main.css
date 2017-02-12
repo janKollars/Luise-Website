@@ -500,58 +500,58 @@ h4 {
   border-radius: 4px;
   margin-bottom: 2.5rem; }
 
-@media (hover) {
-  .project-cover {
-    position: relative;
-    overflow: hidden; }
-    .project-cover a, .project-cover a:hover, .project-cover a:visited {
-      color: #e8e8e8; }
-    .project-cover img {
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out; }
-    .project-cover figcaption {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #e8e8e8;
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
-      border-radius: 4px;
-      padding: 2rem; } }
-    @media (hover) and (min-width: 768px) {
+.project-cover {
+  position: relative;
+  overflow: hidden; }
+  .project-cover a, .project-cover a:hover, .project-cover a:visited {
+    color: #e8e8e8; }
+  .project-cover img {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .project-cover figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e8e8e8;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    border-radius: 4px;
+    padding: 2rem; }
+    @media (min-width: 768px) {
       .project-cover figcaption {
         padding: 1rem; } }
-    @media (hover) and (min-width: 992px) {
+    @media (min-width: 992px) {
       .project-cover figcaption {
         padding: 2rem; } }
-
-@media (hover) {
-    .project-cover h4 {
+  .project-cover h4 {
+    position: relative;
+    margin-top: 0; }
+    .project-cover h4::after {
+      content: '';
       position: relative;
-      margin-top: 0; }
-      .project-cover h4::after {
-        content: '';
-        position: relative;
-        display: block;
-        border-bottom: 0.125rem solid #e8e8e8;
-        width: 0;
-        -webkit-transition: all 300ms ease-in-out;
-        transition: all 300ms ease-in-out;
-        -webkit-transition-delay: 200ms;
-                transition-delay: 200ms; }
-  .project-cover:hover img {
-    -webkit-filter: blur(0.4rem);
-            filter: blur(0.4rem); }
-  .project-cover:hover figcaption {
-    opacity: 1;
-    visibility: visible; }
-  .project-cover:hover h4::after {
-    width: 100%; } }
+      display: block;
+      border-bottom: 0.125rem solid #e8e8e8;
+      width: 0;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      -webkit-transition-delay: 200ms;
+              transition-delay: 200ms; }
+
+.project-cover:hover img {
+  -webkit-filter: blur(0.4rem);
+          filter: blur(0.4rem); }
+
+.project-cover:hover figcaption {
+  opacity: 1;
+  visibility: visible; }
+
+.project-cover:hover h4::after {
+  width: 100%; }
 
 nav.langselect {
   border: 0.00625rem #424242 solid;
