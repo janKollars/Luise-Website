@@ -12,21 +12,28 @@
 .post-list
   list-style: none
   padding-left: 0
-  display: flex
-  flex-wrap: wrap
-  margin-left: -.5em
-  margin-right: -.5em
+  margin: 0
   background-color: $background-color
-  position: relative
+  +breakp($xs)
+    margin-right: -.5rem
+  +breakp($md)
+    margin-right: -1rem
 
 .post-item
-  flex: 1 0 200px
+  display: inline-block
   margin-bottom: 5rem
-  margin-left: .5em
-  margin-right: .5em
-  +breakp($sm)
-    max-width: 300px
-
+  width: 100%
+  +breakp($xs)
+    width: 50%
+  +breakp($md)
+    width: 33.3333333%
+  +breakp($lg)
+    width: 25%
+  figure
+    +breakp($xs)
+      margin-right: .5rem
+    +breakp($md)
+      margin-right: 1rem
   img
     width: 100%
   h4

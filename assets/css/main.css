@@ -766,29 +766,34 @@ nav.langselect {
 .post-list {
   list-style: none;
   padding-left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-left: -.5em;
-  margin-right: -.5em;
-  background-color: #fdfdfd;
-  position: relative; }
+  margin: 0;
+  background-color: #fdfdfd; }
+  @media (min-width: 320px) {
+    .post-list {
+      margin-right: -.5rem; } }
+  @media (min-width: 768px) {
+    .post-list {
+      margin-right: -1rem; } }
 
 .post-item {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 200px;
-      -ms-flex: 1 0 200px;
-          flex: 1 0 200px;
+  display: inline-block;
   margin-bottom: 5rem;
-  margin-left: .5em;
-  margin-right: .5em; }
-  @media (min-width: 544px) {
+  width: 100%; }
+  @media (min-width: 320px) {
     .post-item {
-      max-width: 300px; } }
+      width: 50%; } }
+  @media (min-width: 768px) {
+    .post-item {
+      width: 33.3333333%; } }
+  @media (min-width: 992px) {
+    .post-item {
+      width: 25%; } }
+  @media (min-width: 320px) {
+    .post-item figure {
+      margin-right: .5rem; } }
+  @media (min-width: 768px) {
+    .post-item figure {
+      margin-right: 1rem; } }
   .post-item img {
     width: 100%; }
   .post-item h4 {
