@@ -29,14 +29,15 @@
                 {{ project.title-de }}
               {% endif %}
               </h4>
+
+              <p>
+                {% if page.language == "en" %}
+                  {{ project.desc }}
+                {% else %}
+                  {{ project.desc-de }}
+                {% endif %}
+              </p>
             </a>
-            <p>
-              {% if page.language == "en" %}
-                {{ project.desc }}
-              {% else %}
-                {{ project.desc-de }}
-              {% endif %}
-            </p>
           </figcaption>
         </figure>
 
