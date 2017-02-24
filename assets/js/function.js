@@ -45,9 +45,6 @@ function closenav() {
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
-  $('.parallax-').css({
-    'transform' : 'translate(0px, '+ wScroll /2 + '%)'
-  });
   $('.parallax-title').css({
     'transform' : 'translate(0px, '+ wScroll /4.5 + '%)'
   });
