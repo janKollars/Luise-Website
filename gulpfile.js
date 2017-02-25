@@ -5,6 +5,8 @@ var cp = require('child_process');
 var htmlmin = require('gulp-htmlmin');
 var path = require('path');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
+var cleanCSS = require('gulp-clean-css');
 
 var deploy = '_site/';
 
@@ -30,11 +32,11 @@ gulp.task('htmlmin', ['build'], function() {
   .pipe(gulp.dest(deploy));
 });
 
-gulp.task('rebuild', ['htmlmin'], function () {
+gulp.task('rebuild', ['htmlmin', 'js-uglify'], function () {
     browserSync.reload();
 });
 
-gulp.task('browser-sync', ['sass', 'htmlmin'], function() {
+gulp.task('browser-sync', ['sass', 'htmlmin', 'js-uglify'], function() {
   browserSync({
     server: {
       baseDir: '_site'
@@ -50,10 +52,18 @@ gulp.task('sass', function () {
       onError: browserSync.notify
     }))
     .pipe(autoprefix(['last 10 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('_site/assets/css'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('assets/css'));
 });
+
+gulp.task('js-uglify', ['build'], function(cb) {
+  return gulp.src('_site/assets/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('_site/assets/js/'))
+});
+
 
 gulp.task('watch', function () {
   gulp.watch([paths.styles, '!assets/css/main.css'], ['sass']);
