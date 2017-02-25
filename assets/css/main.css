@@ -782,8 +782,7 @@ nav.langselect {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+          transform: translate3d(0, 0, 0); }
 
 .slick-track {
   position: relative;
@@ -847,8 +846,8 @@ nav.langselect {
   height: 20px;
   padding: 0;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   cursor: pointer;
   color: transparent;
   border: none;
@@ -879,7 +878,7 @@ nav.langselect {
   font-size: 20px;
   line-height: 1;
   opacity: .75;
-  color: white;
+  color: #111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1221,3 +1220,18 @@ nav.langselect {
     font-size: 75%;
     max-width: 45rem;
     margin: .25rem auto; }
+
+.carousel .carousel-img {
+  position: relative;
+  outline: none; }
+
+.carousel img {
+  display: block;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-height: -webkit-calc(100vh - 2rem);
+  max-height: calc(100vh - 2rem); }
+
+.slick-dots {
+  position: static; }

@@ -12,7 +12,7 @@ var paths = {
   scripts: 'assets/js/**',
   images: 'assets/img/**',
   styles: 'assets/css/**',
-  markup: ['*.html', '_layouts/*.html', '_includes/*', '_posts/**']
+  markup: ['*.html', '_layouts/*.html', '_includes/*', '_posts/**', '_data/*']
 };
 gulp.task('build', function (done) {
   return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})

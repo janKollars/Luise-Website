@@ -14,11 +14,11 @@
   Issues: http://github.com/kenwheeler/slick/issues
  */
 
-$(document).ready(function() {
-  $('.carousel').slick({
-    adaptiveHeight: true
-  });
+$('.carousel').slick({
+  dots: true,
+  adaptiveHeight: true
 });
+
 /* global window, document, define, jQuery, setInterval, clearInterval */
 (function(factory) {
     'use strict';

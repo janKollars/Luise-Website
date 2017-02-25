@@ -1,10 +1,13 @@
-<div class="carousel">
+<figure class="carousel">
   {% assign folder = '/assets/img/' | append: page.categories[0] | append: '/' | append: page.thumbnail | replace: '.jpg', '' | append: '/' %}
   {% for image in site.static_files %}
     {% if image.path contains folder %}
-        <div>
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-        </div>
+    <div class="carousel-img">
+    
+      <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+    </div>
+
     {% endif %}
 {% endfor %}
-</div>
+</figure>
