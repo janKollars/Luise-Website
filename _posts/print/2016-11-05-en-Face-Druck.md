@@ -1,12 +1,9 @@
 ---
 layout: post
 title:  Face
-thumbnail: Face-Druck.jpg
-<<<<<<< Updated upstream
+thumbnail: Face.jpg
 date:   2016-11-05 19:15:00 +0100
-=======
-author: Luise
-date:   2015-11-05 19:15:00 +0100
->>>>>>> Stashed changes
 categories: print
+carousel: true
 ---
+{% include carousel.html %}
