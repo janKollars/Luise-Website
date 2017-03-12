@@ -8,81 +8,75 @@
       desc-de: Untersuchung des Konflikts zwischen Natur und urbanem Raum
       img: /assets/img/photography/thumbnails/Ausbuechsen_300x225.jpg
       link: /photography/2017/02/12/en-Ausbuechsen/
-    - title: Project 2
-      title-de: Projekt 2
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
-    - title: Project 3
-      title-de: Projekt 3
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
 - kat: Printed work
   kat-de: Drucke
   link: print
   projects:
-    - title: Project 1
-      title-de: Projekt 1
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
-    - title: Project 2
-      title-de: Projekt 2
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
-    - title: Project 3
-      title-de: Projekt 3
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
+    - title: Zebra
+      title-de: Zebra
+      desc:
+      desc-de:
+      img: /assets/img/print/thumbnails/Zebra_300x225.jpg
+      link: /print/2016/11/05/en-Zebra/
+    - title: Man with bird
+      title-de: Mann mit Vogel
+      desc:
+      desc-de:
+      img: /assets/img/print/thumbnails/Man-with-bird_300x225.jpg
+      link: /print/2016/11/05/en-Man-with-bird/
+    - title: Belle
+      title-de: Belle
+      desc:
+      desc-de:
+      img: /assets/img/print/thumbnails/Belle_300x225.jpg
+      link: /print/2016/11/05/en-Belle/
 - kat: Collages
   kat-de: Collagen
   link: collages
   projects:
-    - title: (Ent-)Normiert
-      title-de: (Ent-)Normiert
-      desc: Versuch die Köpernormierung zu brechen
-      desc-de: Versuch die Köpernormierung zu brechen
-      img: /assets/img/collages/thumbnails/ent_normiert_300x225.jpg
-      link: /collages/2016/11/05/en-Ent-Normiert/
-    - title: Project 2
-      title-de: Projekt 2
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
-    - title: Project 3
-      title-de: Projekt 3
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
+    # - title: (Ent-)Normiert
+    #   title-de: (Ent-)Normiert
+    #   desc: Versuch die Köpernormierung zu brechen
+    #   desc-de: Versuch die Köpernormierung zu brechen
+    #   img: /assets/img/collages/thumbnails/ent_normiert_300x225.jpg
+    #   link: /collages/2016/11/05/en-Ent-Normiert/
+    - title: The Hills are Alive
+      title-de: Die Hügel sind lebendig
+      desc:
+      desc-de:
+      img: /assets/img/collages/thumbnails/The-Hills-are-Alive_300x225.jpg
+      link: /collages/2016/11/05/en-The-Hills-are-Alive/
+    - title: Brussels
+      title-de: Brüssel
+      desc:
+      desc-de:
+      img: /assets/img/collages/thumbnails/Brussels_300x225.jpg
+      link: /collages/2016/11/05/en-Brussels/
+    - title: Kitchen
+      title-de: Küche
+      desc:
+      desc-de:
+      img: /assets/img/collages/thumbnails/Kitchen_300x225.jpg
+      link: /collages/2016/11/05/en-Kitchen/
 - kat: Drawings
   kat-de: Zeichnungen
   link: drawings
   projects:
-    - title: Project 1
-      title-de: Projekt 1
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
-    - title: Project 2
-      title-de: Projekt 2
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
-    - title: Project 3
-      title-de: Projekt 3
-      desc: description placeholder placeholder
-      desc-de: Beschreibung Platzhalter Platzhalter
-      img: /assets/img/placeholder.png
-      link: '#'
+    - title: Strawberry
+      title-de: Erdbeere
+      desc:
+      desc-de:
+      img: /assets/img/drawings/thumbnails/strawberry_300x225.jpg
+      link: /drawings/2016/11/05/en-Strawberry/
+    - title: Hi
+      title-de: Hi
+      desc:
+      desc-de:
+      img: /assets/img/drawings/thumbnails/hi_300x225.jpg
+      link: /drawings/2016/11/05/en-Hi/
+    - title: Horns
+      title-de: Hörner
+      desc:
+      desc-de:
+      img: /assets/img/drawings/thumbnails/horns_300x225.jpg
+      link: /drawings/2014/11/05/en-Horns/

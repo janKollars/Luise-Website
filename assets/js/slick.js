@@ -13,10 +13,11 @@
     Repo: http://github.com/kenwheeler/slick
   Issues: http://github.com/kenwheeler/slick/issues
  */
-
-$('.carousel').slick({
-  dots: true,
-  adaptiveHeight: true
+$(document).ready(function(){
+  $('.carousel').slick({
+    dots: true,
+    adaptiveHeight: true
+  });
 });
 
 /* global window, document, define, jQuery, setInterval, clearInterval */

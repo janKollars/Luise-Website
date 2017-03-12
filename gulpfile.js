@@ -26,7 +26,9 @@ gulp.task('htmlmin', ['build'], function() {
     path.join(deploy, '*.html'),
     path.join(deploy, '*/*.html'),
     path.join(deploy, '*/*/*.html'),
-    path.join(deploy, '*/*/*/*.html')
+    path.join(deploy, '*/*/*/*.html'),
+    path.join(deploy, '*/*/*/*/*.html'),
+    path.join(deploy, '*/*/*/*/*/*.html')
   ])
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest(deploy));
