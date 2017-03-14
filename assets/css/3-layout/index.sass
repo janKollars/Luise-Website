@@ -1,6 +1,6 @@
 .index-header
   background:
-    image: url(/assets/img/ph-bg.jpg)
+    image: url(/assets/img/bg.jpg)
     color: $grey-dark
     repeat: no-repeat
     size: cover
@@ -9,19 +9,16 @@
   overflow: hidden
   color: $grey-light
   text-align: center
-  text-shadow: 0 0 2px rgba(0,0,0,.9)
+  text-shadow: 0 0 2px black
   padding: 10rem 0
+
   +breakp($lg)
     padding: 20rem 0 10rem 0
   h1
     margin: 0
     font-weight: 300
-    //-webkit-text-stroke: 0.0625rem #000
-    //-moz-text-stroke: 0.0625rem #000
-    //text-stroke: 0.0625rem #000
-
   h3
-    margin-top: .5rem
+    margin: .5rem 0 1rem 0
 .index-content
   section
     padding: 5rem 0
@@ -62,7 +59,11 @@
 .profil-img
   align-self: flex-start
   width: 100%
+  max-width: 400px
+  margin: 1rem auto
+  display: block
   +breakp($sm)
+    margin: 0
     width: 38%
     height: autor
 
