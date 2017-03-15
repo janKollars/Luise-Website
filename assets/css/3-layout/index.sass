@@ -2,8 +2,7 @@
   background:
     image: url(/assets/img/bg.jpg)
     color: $grey-dark
-    repeat: no-repeat
-    size: cover
+    repeat: round
     position: center
     attachment: fixed
   overflow: hidden
@@ -14,11 +13,15 @@
 
   +breakp($lg)
     padding: 20rem 0 10rem 0
+  .parallax-title
+    background-color: rgba($grey-dark, .95)
+    padding: 1rem 0
   h1
     margin: 0
     font-weight: 300
+    line-height: 1
   h3
-    margin: .5rem 0 1rem 0
+    margin: .5rem 0 0 0
 .index-content
   section
     padding: 5rem 0
@@ -85,7 +88,7 @@
   .project
     display: inline-block
     width: 100%
-    +breakp($xs)
+    +breakp($ss)
       width: 50%
     +breakp($sm)
       width: 33.33333%

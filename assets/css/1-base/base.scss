@@ -19,6 +19,7 @@ $grey-dark:  darken($grey, 25%);
 
 // Bootstrap variables
 $xs: 320px;
+$ss: 450px;
 $sm: 544px;
 $md: 768px;
 $lg: 992px;
@@ -47,6 +48,7 @@ body {
     max-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden
 }
 
 
