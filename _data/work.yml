@@ -1,45 +1,18 @@
-- kat: Photography
-  kat-de: Fotografie
-  link: photography
-  projects:
-    - title: Escape
-      title-de: Ausbüchsen
-      desc: Exploring the conflict between nature and the urban environment
-      desc-de: Untersuchung des Konflikts zwischen Natur und urbanem Raum
-      img: /assets/img/photography/thumbnails/Ausbuechsen_300x225.jpg
-      link: /photography/2017/02/12/en-Ausbuechsen/
-- kat: Printed work
-  kat-de: Drucke
-  link: print
-  projects:
-    - title: Zebra
-      title-de: Zebra
-      desc:
-      desc-de:
-      img: /assets/img/print/thumbnails/Zebra_300x225.jpg
-      link: /print/2016/11/05/en-Zebra/
-    - title: Man with bird
-      title-de: Mann mit Vogel
-      desc:
-      desc-de:
-      img: /assets/img/print/thumbnails/Man-with-bird_300x225.jpg
-      link: /print/2016/11/05/en-Man-with-bird/
-    - title: Belle
-      title-de: Belle
-      desc:
-      desc-de:
-      img: /assets/img/print/thumbnails/Belle_300x225.jpg
-      link: /print/2016/11/05/en-Belle/
+- kat: Projects
+  kat-de: Projekte
+  link: projects
+  posts:
+    - title: (Ent-)Normiert
+      title-de: (Ent-)Normiert
+      desc: Versuch die Köpernormierung zu brechen
+      desc-de: Versuch die Köpernormierung zu brechen
+      img: /assets/img/collages/thumbnails/ent_normiert_300x225.jpg
+      link: /collages/2016/11/05/en-Ent-Normiert/
+
 - kat: Collages
   kat-de: Collagen
   link: collages
-  projects:
-    # - title: (Ent-)Normiert
-    #   title-de: (Ent-)Normiert
-    #   desc: Versuch die Köpernormierung zu brechen
-    #   desc-de: Versuch die Köpernormierung zu brechen
-    #   img: /assets/img/collages/thumbnails/ent_normiert_300x225.jpg
-    #   link: /collages/2016/11/05/en-Ent-Normiert/
+  posts:
     - title: The Hills are Alive
       title-de: Die Hügel sind lebendig
       desc:
@@ -58,10 +31,11 @@
       desc-de:
       img: /assets/img/collages/thumbnails/Kitchen_300x225.jpg
       link: /collages/2016/11/05/en-Kitchen/
+
 - kat: Drawings
   kat-de: Zeichnungen
   link: drawings
-  projects:
+  posts:
     - title: Strawberry
       title-de: Erdbeere
       desc:
@@ -80,3 +54,37 @@
       desc-de:
       img: /assets/img/drawings/thumbnails/horns_300x225.jpg
       link: /drawings/2014/11/05/en-Horns/
+
+- kat: Printed work
+  kat-de: Drucke
+  link: print
+  posts:
+    - title: Zebra
+      title-de: Zebra
+      desc:
+      desc-de:
+      img: /assets/img/print/thumbnails/Zebra_300x225.jpg
+      link: /print/2016/11/05/en-Zebra/
+    - title: Man with bird
+      title-de: Mann mit Vogel
+      desc:
+      desc-de:
+      img: /assets/img/print/thumbnails/Man-with-bird_300x225.jpg
+      link: /print/2016/11/05/en-Man-with-bird/
+    - title: Belle
+      title-de: Belle
+      desc:
+      desc-de:
+      img: /assets/img/print/thumbnails/Belle_300x225.jpg
+      link: /print/2016/11/05/en-Belle/
+
+- kat: Photography
+  kat-de: Fotografie
+  link: photography
+  posts:
+    - title: Escape
+      title-de: Ausbüchsen
+      desc: Exploring the conflict between nature and the urban environment
+      desc-de: Untersuchung des Konflikts zwischen Natur und urbanem Raum
+      img: /assets/img/photography/thumbnails/Ausbuechsen_300x225.jpg
+      link: /photography/2017/02/12/en-Ausbuechsen/

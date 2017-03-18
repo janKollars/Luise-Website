@@ -16,26 +16,26 @@
       {% endif %}
     </h3>
     <div class="container">
-      <div class="demo-projects">
-      {% for project in work.projects %}
-        <div class="project">
-          <figure class="project-cover">
-            <img alt="Projekt" src="{{ project.img }}">
+      <div class="featured-posts">
+      {% for post in work.posts %}
+        <div class="featured-post">
+          <figure class="figure-overlay">
+            <img alt="Img for {{ post.title }}" src="{{ post.img }}">
             <figcaption>
-              <a href="{{ project.link }}">
+              <a href="{{ post.link }}">
                 <h4>
                 {% if page.language == "en" %}
-                  {{ project.title }}
+                  {{ post.title }}
                 {% else %}
-                  {{ project.title-de }}
+                  {{ post.title-de }}
                 {% endif %}
                 </h4>
 
                 <p>
                   {% if page.language == "en" %}
-                    {{ project.desc }}
+                    {{ post.desc }}
                   {% else %}
-                    {{ project.desc-de }}
+                    {{ post.desc-de }}
                   {% endif %}
                 </p>
               </a>
