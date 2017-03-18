@@ -1,7 +1,8 @@
 #top-menu
   background-color: $grey-dark
   position: relative
-  z-index: 100
+  line-height: 1
+  z-index: 1
   .container
     +breakp($md)
       display: flex
@@ -28,19 +29,14 @@
     &:hover
       color: #fff
       text-decoration: none
-  .logo
-    display: inline-block
-    color: white
-    +breakp($md)
-      width: 100%
 
-    img
-      max-height: 2rem
+  img
+    height: 2rem
 
 #burger
   position: relative
   cursor: pointer
-  height: 24px
+  height: 28px
   width: 40px
   +breakp($md)
     display: none
@@ -55,9 +51,9 @@
   span:nth-child(1)
     top: 0px
   span:nth-child(2)
-    top: 12px
+    top: calc(50% - 2px)
   span:nth-child(3)
-    top: 24px
+    bottom: 0
 #burger.is-open
   span:nth-child(1)
     transform: rotate(45deg)
