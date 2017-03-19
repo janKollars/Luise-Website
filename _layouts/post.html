@@ -3,6 +3,9 @@ layout: default
 ---
 
 {% include nav-general.html %}
+{% if page.language %}
+{% include langselect.html %}
+{% endif %}
 <header class="header post-header">
   <div class="container">
     <h2>{{ page.title }}</h1>

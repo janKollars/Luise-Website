@@ -2,6 +2,10 @@
   {% if page.name contains "index" %}
     <a class="en" href="{{ site.baseurl }}/">EN</a>
     <a class="de" href="{{ site.baseurl | append: "/de" }}">DE</a>
+  {% elsif page.layout == "post" and page.language %}
+    {% assign path = page.date | date: '%Y/%m/%d/' %}
+    <a class="en" href="/{{ page.categories[0] }}/{{ path }}en-{{ page.handle }}">EN</a>
+    <a class="de" href="/{{ page.categories[0] }}/{{ path }}de-{{ page.handle }}">DE</a>
   {% else %}
     <a class="en" href="{{ site.baseurl | append: page.handle }}">EN</a>
     <a class="de" href="{{ site.baseurl | append: "/de" | append: page.handle }}">DE</a>

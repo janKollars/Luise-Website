@@ -2,12 +2,12 @@
   kat-de: Projekte
   link: projects
   posts:
-    - title: (Ent-)Normiert
-      title-de: (Ent-)Normiert
-      desc: Versuch die Köpernormierung zu brechen
+    - title: (De-) Standardised
+      title-de: (Ent-) Normiert
+      desc: Attempt to break body standardisation
       desc-de: Versuch die Köpernormierung zu brechen
-      img: /assets/img/collages/thumbnails/ent_normiert_300x225.jpg
-      link: /collages/2016/11/05/en-Ent-Normiert/
+      img: /assets/img/projects/thumbnails/ent_normiert_300x225.jpg
+      link: /projects/2016/11/05/en-Ent-Normiert/
 
 - kat: Collages
   kat-de: Collagen
