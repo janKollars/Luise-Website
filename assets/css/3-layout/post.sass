@@ -3,22 +3,24 @@
   padding: 4rem 0 3rem
   +breakp($lg)
     padding: 2rem 0 2rem 0
-.post-content p
-  max-width: 45rem
-  margin: 1rem auto
-.post-content img
-  max-width: 100%
-  background-color: $grey-light
-.post-content figure
-  background-color: $grey-light
-  padding: 1rem .625rem
-  margin-left: -.625rem
-  margin-right: -.625rem
-  margin-bottom: 1rem
-  +breakp($sm)
-    margin-bottom: 1.5rem
-  +breakp($md)
-    margin-bottom: 2.5rem
+.post-content
+  > p, blockquote
+    max-width: 45rem
+    margin: 1rem auto
+  img
+    max-width: 100%
+    background-color: $grey-light
+
+  figure
+    background-color: $grey-light
+    padding: 1rem .625rem
+    margin-left: -.625rem
+    margin-right: -.625rem
+    margin-bottom: 1rem
+    +breakp($sm)
+      margin-bottom: 1.5rem
+    +breakp($md)
+      margin-bottom: 2.5rem
 
   figcaption
     font-size: 75%

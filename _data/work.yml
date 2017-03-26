@@ -9,6 +9,19 @@
       img: /assets/img/projects/thumbnails/ent_normiert_300x225.jpg
       link: /projects/2016/11/05/en-Ent-Normiert/
       link-de: /projects/2016/11/05/de-Ent-Normiert/
+    - title: Blind to Consumption
+      title-de: Konsumblind
+      desc: our disappearing awareness of the reality
+      desc-de: unserer verschwindendes Bewusstsein für die Realität
+      img: /assets/img/projects/thumbnails/konsumblind_300x225.jpg
+      link: /projects/2016/11/05/de-Konsumblind/
+    - title: Wählen
+      title-de: Wählen
+      desc:
+      desc-de:
+      img: /assets/img/projects/thumbnails/waehlen_300x225.jpg
+      link: /projects/2016/11/05/en-Waehlen/
+      link-de: /projects/2016/11/05/de-Waehlen/
 
 - kat: Collages
   kat-de: Collagen

@@ -22,7 +22,7 @@
           <figure class="figure-overlay">
             <img alt="Img for {{ post.title }}" src="{{ post.img }}">
             <figcaption>
-              <a href="{% if page.language == "en" %}{{ post.link }}{% else %}{{ post.link-de }}{% endif %}">
+              <a href="{% if post.link-de %}{% if page.language == "en" %}{{ post.link }}{% else %}{{ post.link-de }}{% endif %}{% else %}{{ post.link }}{% endif %}">
                 <h4>
                 {% if page.language == "en" %}
                   {{ post.title }}

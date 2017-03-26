@@ -113,13 +113,15 @@ figure {
 blockquote {
     color: $grey;
     border-left: 4px solid $grey-light;
-    padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
+    }
+    > * {
+      margin-left: $spacing-unit / 2;
     }
 }
 
