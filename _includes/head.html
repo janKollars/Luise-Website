@@ -6,7 +6,18 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description[page.language] }}">
   <meta name="theme-color" content="#828282">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  {% if page.layout == "post" %}
+    {% assign inhalt = page.content | strip_newlines %}
+    {% if page.ogimg %}
+      {% assign ogimgsrc = page.ogimg | prepend: site.baseurl %}
+    {% elsif inhalt == "" %}
+      {% assign ogimgsrc = "/assets/img/" | append: page.categories[0] | append: "/" | append: page.thumbnail | prepend: site.baseurl %}
+  {% endif %}
+  <meta property="og:type" content="article">
+  <meta property="og:image:secure_url" content="{{ ogimgsrc }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  {% endif %}
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

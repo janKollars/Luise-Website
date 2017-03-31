@@ -3,7 +3,7 @@ description:
   en: Artist
   de: Künstlerin
 permalink: pretty
-baseurl: ""
+baseurl: "https://luisekollars.github.io"
 email: luise.kollars@gmail.com
 exclude: ["node_modules",
   "assets/css/0-tools",

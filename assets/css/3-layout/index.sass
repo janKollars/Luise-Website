@@ -22,9 +22,11 @@
     line-height: 1
   h3
     margin: .5rem 0 0 0
+
+section
+  padding: 5rem 0
+  
 .index-content
-  section
-    padding: 5rem 0
   h2
     text-align: center
     font-weight: 300
@@ -123,26 +125,3 @@
 #insta-feed
   .juicer, .referral
     display: none
-
-#contact
-  background-color: $grey-dark
-  color: $grey-light
-  > div
-    text-align: center
-  .mail
-    position: relative
-    z-index: 2
-    display: inline-block
-    color: $grey-light
-    text-decoration: none
-    transition: all 300ms ease-in-out
-    &::after
-      position: relative
-      display: block
-      z-index: 1
-      content: ''
-      width: 100%
-      border-bottom: 0.0625rem solid $grey-light
-      transition: all 300ms ease-in-out
-    &:hover::after
-      width: 0

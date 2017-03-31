@@ -8,8 +8,16 @@
   overflow: hidden
 
   a, a:hover, a:visited
-    color: $grey-light
-
+    display: block
+    box-sizing: border-box
+    height: 100%
+    padding: 1rem
+    +breakp($md)
+      padding: 1rem
+    +breakp($lg)
+      padding: 2rem
+    &:hover, &:visited
+      color: $grey-light
   img
     transition: filter 300ms ease-in-out
 
@@ -25,11 +33,7 @@
     visibility: hidden
     transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out
     border-radius: 4px
-    padding: 1rem
-    +breakp($md)
-      padding: 1rem
-    +breakp($lg)
-      padding: 2rem
+
   h4
     position: relative
     margin-top: 0
