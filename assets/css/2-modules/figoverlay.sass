@@ -8,13 +8,14 @@
   overflow: hidden
 
   a, a:hover, a:visited
+    color: $grey-light
     display: block
     box-sizing: border-box
     height: 100%
     padding: 1rem
+    +breakp($sm)
+      padding: .5rem
     +breakp($md)
-      padding: 1rem
-    +breakp($lg)
       padding: 2rem
     &:hover, &:visited
       color: $grey-light
@@ -28,16 +29,21 @@
     bottom: 0
     left: 0
     background-color: rgba(0,0,0,.5)
-    color: $grey-light
     opacity: 0
     visibility: hidden
-    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out
+    transition: opacity 300ms ease-in-out 2ms, visibility 1ms
     border-radius: 4px
 
   h4
     position: relative
     margin-top: 0
-
+    margin-bottom: .5rem
+    +breakp($xs)
+      margin-bottom: 1rem
+    +breakp($sm)
+      margin-bottom: .3rem
+    +breakp($md)
+      margin-bottom: 1rem
     &::after
       content: ''
       position: relative
@@ -46,6 +52,11 @@
       width: 0
       transition: width 300ms ease-in-out
       transition-delay: 200ms
+  p
+    +breakp($sm)
+      font-size: .85rem
+    +breakp($md)
+      font-size: 1rem
 .figure-overlay:hover
   img
     filter: blur(0.4rem)
