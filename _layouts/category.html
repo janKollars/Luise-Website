@@ -12,7 +12,7 @@ layout: default
 </header>
 <div class="container">
   <ul class="post-list">
-    {% for post in site.categories.[page.catname] %}
+    {% for post in site.categories[page.catname] %}
     {% if post.language == nil or page.language == post.language  %}
     <li class="post-item">
       <figure class="figoverlay">

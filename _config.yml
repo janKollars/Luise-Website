@@ -5,6 +5,8 @@ description:
 permalink: pretty
 baseurl: "https://luisekollars.github.io"
 email: luise.kollars@gmail.com
+gems:
+  - jekyll-sitemap
 exclude: ["node_modules",
   "assets/css/0-tools",
   "assets/css/1-base",
