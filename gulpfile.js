@@ -30,7 +30,7 @@ gulp.task('htmlmin', ['build'], function() {
     path.join(deploy, '*/*/*/*/*.html'),
     path.join(deploy, '*/*/*/*/*/*.html')
   ])
-  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
   .pipe(gulp.dest(deploy));
 });
 
