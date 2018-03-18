@@ -8,10 +8,10 @@ layout: default
 {% endif %}
 <header class="header post-header">
   <div class="container">
-    <h2>{{ page.title }}</h1>
+    <h1 class="parallax-title">{{ page.title }}</h1>
   </div>
 </header>
-<div class="post-content container">
+<main class="post-content container">
   {% assign inhalt = page.content | strip_newlines %}
   {% if inhalt == "" %}
   <figure>
@@ -68,5 +68,5 @@ layout: default
       </a>
     </div>
   </div>
-</div>
+</main>
 {% include contact.html %}

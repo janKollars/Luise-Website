@@ -10,7 +10,7 @@ layout: default
     <h1 class="parallax-title">{{ page.title }}</h1>
   </div>
 </header>
-<div class="container">
+<main class="container">
   <ul class="post-list">
     {% for post in site.categories[page.catname] %}
     {% if post.language == nil or page.language == post.language  %}
@@ -28,4 +28,4 @@ layout: default
     {% endif %}
     {% endfor %}
   </ul>
-</div>
+</main>

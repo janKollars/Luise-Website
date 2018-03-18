@@ -15,35 +15,33 @@
         {{ work.kat-de }}
       {% endif %}
     </h3>
-    <div class="container">
-      <div class="featured-posts">
-      {% for post in work.posts %}
-        <div class="featured-post">
-          <figure class="figure-overlay">
-            <img alt="Img for {{ post.title }}" src="{{ post.img }}">
-            <figcaption>
-              <a href="{% if post.link-de %}{% if page.language == "en" %}{{ post.link }}{% else %}{{ post.link-de }}{% endif %}{% else %}{{ post.link }}{% endif %}">
-                <h4>
-                {% if page.language == "en" %}
-                  {{ post.title }}
-                {% else %}
-                  {{ post.title-de }}
-                {% endif %}
-                </h4>
+    <div class="flex-container space-between">
+    {% for post in work.posts %}
+      <div class="featured-post">
+        <figure class="figure-overlay">
+          <img alt="Img for {{ post.title }}" src="{{ post.img }}">
+          <figcaption>
+            <a href="{% if post.link-de %}{% if page.language == "en" %}{{ post.link }}{% else %}{{ post.link-de }}{% endif %}{% else %}{{ post.link }}{% endif %}">
+              <h4>
+              {% if page.language == "en" %}
+                {{ post.title }}
+              {% else %}
+                {{ post.title-de }}
+              {% endif %}
+              </h4>
 
-                <p>
-                  {% if page.language == "en" %}
-                    {{ post.desc }}
-                  {% else %}
-                    {{ post.desc-de }}
-                  {% endif %}
-                </p>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-      {% endfor %}
+              <p>
+                {% if page.language == "en" %}
+                  {{ post.desc }}
+                {% else %}
+                  {{ post.desc-de }}
+                {% endif %}
+              </p>
+            </a>
+          </figcaption>
+        </figure>
       </div>
+    {% endfor %}
     </div>
     <div class="container kat-link">
       {% if page.language == "en" %}

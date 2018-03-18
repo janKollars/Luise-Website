@@ -1,51 +1,36 @@
-// //test for touch events support and if not supported, attach .no-touch class to the HTML tag.
-//
-// if (!("ontouchstart" in document.documentElement)) {
-// document.documentElement.className += " no-touch";
-// }
-
 // Smooth Scroll
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+// $(function() {
+//   $('a[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html, body').animate({
+//           scrollTop: target.offset().top
+//         }, 1000);
+//         return false;
+//       }
+//     }
+//   });
+// });
+
+// Menu
+const burger = document.getElementById("burger");
+const nav = document.getElementById("top-nav");
+
+burger.addEventListener("click", function () {
+  burger.classList.toggle("is-open");
+  nav.classList.toggle("is-open");
 });
 
+// Parallax https://daverupert.com/2018/02/cheapass-parallax/
+const title = document.querySelector('.parallax-title');
+const speed = 0.4;
+title.style.transform = 'translateY( calc( var(--scrollparallax) * 1px ) )';
 
-// menutop-burger
-burger = document.getElementById("burger");
-nav = document.getElementById("top-nav");
-
-burger.addEventListener("click", opennav);
-function opennav() {
-  burger.removeEventListener("click", opennav);
-  burger.classList.add("is-open");
-  nav.classList.add("is-open");
-  burger.addEventListener("click", closenav);
-  nav.addEventListener("click", closenav, true);
-}
-function closenav() {
-  burger.removeEventListener("click", closenav);
-  nav.removeEventListener("click", closenav);
-  burger.classList.remove("is-open");
-  nav.classList.remove("is-open");
-  burger.addEventListener("click", opennav)
+function setScrollParallax() {
+    title.style.setProperty("--scrollparallax", (document.body.scrollTop || document.documentElement.scrollTop) * speed);
+    window.requestAnimationFrame( setScrollParallax );
 }
 
-// Parallax
-$(window).scroll(function(){
-
-  var wScroll = $(this).scrollTop();
-  $('.parallax-title').css({
-    'transform' : 'translate(0px, '+ wScroll /4.5 + '%)'
-  });
-});
+window.requestAnimationFrame( setScrollParallax );

@@ -10,12 +10,14 @@
   text-align: center
   text-shadow: 0 0 2px black
   padding: 10rem 0
-
   +breakp($lg)
     padding: 20rem 0 10rem 0
+
   .parallax-title
     background-color: rgba($grey-dark, .95)
     padding: 1rem 0
+    will-change: transform
+
   h1
     margin: 0
     font-weight: 300
@@ -23,26 +25,13 @@
   h3
     margin: .5rem 0 0 0
 
-section
-  padding: 5rem 0
-  
 .index-content
+  padding-top: 0
   h2
     text-align: center
-    font-weight: 300
-    margin-top: 0
-    margin-bottom: 1rem
-    +breakp($md)
-      margin-bottom: 1.8rem
-    +breakp($lg)
-      margin-bottom: 2.5rem
-    +breakp($xl)
-      margin-bottom: 4rem
 
-  p
-    margin-top: 0
-    &:last-child
-      margin-bottom: 0
+section
+  overflow: auto
 
 #bio
   background-color: $grey-light
@@ -70,47 +59,37 @@ section
   +breakp($sm)
     margin: 0
     width: 38%
-    height: autor
+    height: auto
 
 #work
-  padding-bottom: 0
   section:first-of-type
-    padding-top: 4rem
+    padding-top: 0
+  section:last-of-type
+    padding-bottom: 0
   section:nth-child(odd)
     background-color: $grey-light
 
   h3
     margin-bottom: 3rem
 
-  .featured-posts
-    +breakp($xs)
-      margin-right: -.5rem
-    +breakp($sm)
-      margin-right: -1rem
   .featured-post
     display: inline-block
     width: 100%
     +breakp($ss)
-      width: 50%
+      width: 48%
     +breakp($sm)
-      width: 33.33333%
+      width: 32%
 
     figure
-      line-height: 0
-      +breakp($xs)
-        margin-right: .5rem
-      +breakp($sm)
-        margin-right: 1rem
+      line-height: normal
+
     figcaption
       line-height: normal
     img
       width: 100%
-  section
-    &:last-of-type .kat-link
-        border-bottom: 0
 
   .kat-link
-    margin-top: 1rem
+    margin-top: $spacing-unit / 4
     a
       display: inline-block
 
@@ -122,6 +101,10 @@ section
     a:hover
       padding-right: 1rem
 
-#insta-feed
-  .juicer, .referral
-    display: none
+#insta
+  background-color: $grey-light
+
+.insta-logo
+  display: block
+  margin: $spacing-unit auto 0
+  max-width: 250px
