@@ -1,24 +1,28 @@
 .figure-overlay
-  border-radius: 4px
-  margin-bottom: 2.5rem
-
-// @media (hover)
-.figure-overlay
   position: relative
+  margin-bottom: 2.5rem
+  border-radius: 4px
   overflow: hidden
+  line-height: 0
 
-  a, a:hover, a:visited
-    color: $grey-light
+  a,
+  a:hover,
+  a:visited
     display: block
-    box-sizing: border-box
-    height: 100%
     padding: 1rem
+    height: 100%
+    color: $grey-light
+
     +breakp($sm)
       padding: .5rem
+
     +breakp($md)
       padding: 2rem
-    &:hover, &:visited
+
+    &:hover,
+    &:visited
       color: $grey-light
+
   img
     transition: filter 300ms ease-in-out
 
@@ -28,11 +32,11 @@
     right: 0
     bottom: 0
     left: 0
-    background-color: rgba(0,0,0,.5)
-    opacity: 0
+    transition: opacity 300ms ease-in-out
     visibility: hidden
-    transition: opacity 300ms ease-in-out 2ms, visibility 1ms
+    opacity: 0
     border-radius: 4px
+    background-color: rgba(0, 0, 0, .5)
 
   h4
     position: relative
@@ -44,24 +48,28 @@
       margin-bottom: .3rem
     +breakp($md)
       margin-bottom: 1rem
+
     &::after
-      content: ''
-      position: relative
       display: block
-      border-bottom: 0.125rem solid $grey-light
+      position: relative
+      transition: width 300ms ease-in-out 200ms
+      border-bottom: .125rem solid $grey-light
       width: 0
-      transition: width 300ms ease-in-out
-      transition-delay: 200ms
+      content: ''
+
   p
     +breakp($sm)
       font-size: .85rem
     +breakp($md)
       font-size: 1rem
+
 .figure-overlay:hover
   img
-    filter: blur(0.4rem)
+    filter: blur(.4rem)
+
   figcaption
-    opacity: 1
     visibility: visible
+    opacity: 1
+
   h4::after
     width: 100%
