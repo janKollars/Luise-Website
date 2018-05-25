@@ -8,7 +8,8 @@ burger.addEventListener("click", function () {
 });
 
 // Parallax https://daverupert.com/2018/02/cheapass-parallax/
-const title = document.querySelector('.parallax-title');
+const title = document.getElementsByClassName('parallax-title')[0];
+console.log(title);
 const speed = 0.4;
 title.style.transform = 'translateY( calc( var(--scrollparallax) * 1px ) )';
 
