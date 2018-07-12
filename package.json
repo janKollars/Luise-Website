@@ -16,15 +16,17 @@
   "author": "Jan Kollars",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.8.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "3.0.3",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^2.0.1"
-  },
-  "dependencies": {
-    "node-sass": "^4.7.2"
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "3.9.4",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "node-sass": "^4.9.0",
+    "pump": "^3.0.0"
   }
 }

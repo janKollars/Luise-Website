@@ -58,18 +58,19 @@
       content: ''
 
   p
+    line-height: initial
     +breakp($sm)
       font-size: .85rem
     +breakp($md)
       font-size: 1rem
 
-.figure-overlay:hover
-  img
-    filter: blur(.4rem)
+  &:hover
+    img
+      filter: blur(.4rem)
 
-  figcaption
-    visibility: visible
-    opacity: 1
+    figcaption
+      visibility: visible
+      opacity: 1
 
-  h4::after
-    width: 100%
+    h4::after
+      width: 100%
